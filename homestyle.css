@@ -1,0 +1,581 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.medsos{
+	padding: 5px 0;
+	background-color: #364f6b;
+}
+.medsos ul li{
+	display: inline-block;
+	color: white;
+	margin-right: 10px;	
+}
+.container{
+	width: 80%;
+	margin:0 auto;
+}
+.container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+header h1 {	
+	float: left;
+	padding: 15px 0;
+	color: #364f6b;
+}
+header ul{
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a{
+	padding: 25px 20px;
+	display: inline-block;
+}
+header ul li a:hover{
+	background-color: #364f6b;
+	color: white;
+}
+.logo img{
+	width: 40px;
+	float: left;
+	padding-top: 5px; 
+	padding-right: 5px;
+}
+.active {
+	background-color: #364f6b;
+	color: white;	
+}
+.active-slide{
+	text-decoration: underline;
+	color: white;	
+}
+.banner{
+	height:60vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner .image{
+	position: relative;
+	width: 1000%;
+	height: 495px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.gbrbanner{
+	overflow: hidden;
+	position: relative;
+	width: 700px;
+	height: 495px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.banner .image .gbrbanner .image-1 {
+	position: relative;
+	width: 700px;
+	height: 495px;
+	display: flex;
+	flex-wrap: wrap;	
+	animation: slide 40s linear infinite;
+}
+.banner .image .gbrbanner .image-1 img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+}
+.banner .image .gbrbanner .image-1 img:nth-child(2){
+	left: 700px;
+	position: absolute;
+}
+.banner .image .gbrbanner .image-1 img:nth-child(3){
+	left: 1400px;
+	position: absolute;
+}
+.banner .image .gbrbanner .image-1 img:nth-child(4){
+	left: 2100px;
+	position: absolute;
+}
+.banner .image h2{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;	
+	color: white;
+	padding: 20px 25px;
+	border: 3px solid white;
+}
+.banner:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 96px;
+	left: 0;
+	right: 0;
+	bottom: 66px;
+	background-color: rgba(54, 79, 107, .6);
+}
+section {
+	padding: 50px 0;
+}
+section h3 {
+	text-align: center;
+	padding: 20px 0;
+	color: #364f6b;
+	margin-bottom: 25px;
+}
+.about, .event{
+	padding-bottom: 50px;
+}
+.about p{
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.event{
+	background-color: #f9f9f9;
+}
+.box{
+	color: #364f6b;
+	display: flex;
+	flex-wrap: wrap;
+}
+.box:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .acara{
+	width: 33.333%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.gambar img{
+	width: 280px;
+	border: 2px solid;
+	border-radius: 10%;
+	margin: 0px 17px;
+}
+.box .acara h4{
+	margin: 20px 0;
+}
+.kotak{
+	width: 1000px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.kotak .acara {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.kotak .acara .acara-event{
+	overflow: hidden;
+	border: 2px solid;
+	border-radius: 10%;
+}
+.kotak .acara .gambar-meetup,
+.kotak .acara .gambar-makrab,
+.kotak .acara .gambar-expo
+{
+	position: relative;
+	width: 300px;
+	height: 250px;
+	display: flex;
+	flex-wrap: wrap;
+	animation: slide-event 20s linear infinite;
+}
+.kotak .acara .gambar-meetup img,
+.kotak .acara .gambar-makrab img,
+.kotak .acara .gambar-expo img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.kotak .acara .gambar-meetup img:nth-child(2),
+.kotak .acara .gambar-makrab img:nth-child(2),
+.kotak .acara .gambar-expo img:nth-child(2){
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 300px;
+}
+.kotak .acara .gambar-meetup img:nth-child(3),
+.kotak .acara .gambar-makrab img:nth-child(3),
+.kotak .acara .gambar-expo img:nth-child(3){
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 600px;
+}
+/*.kotak .acara .text p {
+	padding-top: 10px;
+	letter-spacing: 2px;
+	padding-bottom: 50px;	
+}*/
+.box .bendahara1,
+.box .bendahara2,
+.box .web,
+.box .sekertaris1{
+	padding-right: 110px;
+}
+.box .ketum,
+.box .waketum
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.box .ketum .admin,
+.box .waketum .admin,
+.box .bendahara1 .admin,
+.box .bendahara2 .admin,
+.box .bendahara3 .admin,
+.box .sekertaris1 .admin,
+.box .sekertaris2 .admin,
+.box .web .admin{
+	position: relative;
+	width: 280px;
+	height: 220px;
+	overflow: hidden;
+	border: 2px solid;
+	border-radius: 10%;
+	background-color: #364f6b;
+}
+.box .ketum .admin img,
+.box .waketum .admin img,
+.box .bendahara1 .admin img,
+.box .bendahara2 .admin img,
+.box .bendahara3 .admin img,
+.box .sekertaris1 .admin img,
+.box .sekertaris2 .admin img,
+.box .web .admin img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+.box .ketum .admin:hover img,
+.box .waketum .admin:hover img,
+.box .bendahara1 .admin:hover img,
+.box .bendahara2 .admin:hover img,
+.box .bendahara3 .admin:hover img,
+.box .sekertaris1 .admin:hover img,
+.box .sekertaris2 .admin:hover img,
+.box .web .admin:hover img{
+	opacity: 0.5;
+}
+.box .ketum .admin .nama,
+.box .waketum .admin .nama,
+.box .bendahara1 .admin .nama,
+.box .bendahara2 .admin .nama,
+.box .bendahara3 .admin .nama,
+.box .sekertaris1 .admin .nama,
+.box .sekertaris2 .admin .nama,
+.box .web .admin .nama{
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	bottom: -30px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	background: #364f6b;
+	transition: 0.5s;
+}
+.box .ketum .admin .nama h3,
+.box .waketum .admin .nama h3,
+.box .bendahara1 .admin .nama h3,
+.box .bendahara2 .admin .nama h3,
+.box .bendahara3 .admin .nama h3,
+.box .sekertaris1 .admin .nama h3,
+.box .sekertaris2 .admin .nama h3,
+.box .web .admin .nama h3{
+	text-align: center;
+	padding: 5px 0;
+	color: white;
+}
+.box .ketum .admin:hover .nama,
+.box .waketum .admin:hover .nama,
+.box .bendahara1 .admin:hover .nama,
+.box .bendahara2 .admin:hover .nama,
+.box .bendahara3 .admin:hover .nama,
+.box .sekertaris1 .admin:hover .nama,
+.box .sekertaris2 .admin:hover .nama,
+.box .web .admin:hover .nama{
+	bottom: 0;
+}
+.box .ketum h4,
+.box .waketum h4,
+.box .bendahara1 h4,
+.box .bendahara2 h4,
+.box .bendahara3 h4,
+.box .sekertaris1 h4,
+.box .sekertaris2 h4,
+.box .web h4{
+	margin: 20px 0px;
+	text-align: center;
+}
+footer{
+	padding: 30px 0;
+	background-color: #333;
+	color: white;
+	text-align: center;
+}
+.bg-loader{
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader{
+	width: 100px;
+	height: 100px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	border-top-color: #364f6b;
+	border-right-color: #364f6b;
+	border-bottom-color: #364f6b;
+	animation: puter 1s linear infinite;
+}
+.gmr img{
+	width: 30%;
+	height: 30%;
+	display: block;
+	margin: auto;
+}
+.kotak{
+	color: #364f6b;
+}
+.kotak:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.kotak h4{
+	margin: 20px 0;
+}
+.kotak p {
+	text-align: justify;
+	letter-spacing: 2px;
+	padding: 5px;
+}
+.kotak .acara{
+	width: 33.333%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.label{
+	background-color: #364f6b;
+	padding: 15px 0;
+}
+.label p {
+	color: white;
+}
+.mobile-menu{
+	float: right;
+	display: none;
+	padding: 18px;
+}
+.mobile-menu:hover{
+	cursor: pointer;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 300px;
+	background-color: #364f6b;
+	opacity: 0.9;
+	transition: 0.5s;
+	z-index: 9999;
+}
+.sidebar ul li a{
+	color: white;
+}
+.sidebar ul li {
+	padding: 24px;
+	transition: 0.5s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover {
+	background-color: #fc5185;
+}
+#check{
+	display: none;
+}
+#check:checked ~ .sidebar{
+	left: 0;
+}
+.vimi {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vimi p{
+	text-align: justify;
+}
+.vimi .visi,
+.vimi .misi{
+	position: relative;
+	width: 45%;
+	height: 500px;
+	padding:0 10px;
+}
+.box-contact{
+	color: #364f6b;
+	display: flex;
+}
+.box-contact .col{
+	width: 33.333%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.icon{
+	width: 70px;
+	height: 70px;
+	border: 2px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 30px;
+	margin: 0 auto;
+}
+.box-contact .col h4{
+	margin: 20px;
+}
+@media(max-width: 1081px){
+	.box{
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container{
+		width: 100%;
+	}
+	.box .acara {
+		width: 100%;
+	}
+	.box-contact {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.about p {
+		padding: 0 20px;
+	}
+	.banner:after{
+
+	}
+	.kotak {
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		align-items: center;
+	}
+	.kotak .acara p{
+		width: 300px;	
+	}
+	.box .bendahara1 ,
+	.box .bendahara2,
+	.box .sekertaris1,
+	.box .web{
+		width: 25%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.box h4{
+		text-align: center;
+	}
+	.box-contact .col h4{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media(max-width: 845px){
+	.container .logo img{
+		padding-top: 25px;
+	}
+	.container h1 a {
+		flex-direction: column;
+		display: flex;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+	.slidebar{
+		display: block;
+	}
+	.about p {
+		padding: 0 10px;
+	}
+	.banner:after{
+		top :130px;
+		bottom: 12px;
+		overflow: hidden;
+	}
+}
+@keyframes slide{
+	0% {right: 0px;}
+	15% {right: 700px;}
+	30% {right: 1400px;}
+	45% {right: 2100px;}
+	60% {right: 1400px;}	
+	75% {right: 700px;}
+	100% {right: 0px;}
+}
+@keyframes slide-event{
+	0% {right: 0px;}
+	25% {right: 300px;}
+	50% {right: 600px;}
+	75% {right: 300px;}
+	100% {right: 0px;}
+}
+@keyframes puter{
+	100%{
+		transform: rotate(360deg);
+	}
+}
